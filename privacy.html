@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the personal Marcus PA Mail Mirror application and its information website.">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy policy · Marcus PA Mail Mirror</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="brand" href="./">Marcus PA Mail Mirror</a>
+    <nav aria-label="Main navigation"><a href="./">About</a><a href="privacy.html" aria-current="page">Privacy policy</a></nav>
+  </header>
+  <main id="main">
+    <p class="eyebrow">Effective 7 September 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="intro">This policy describes Marcus PA Mail Mirror, a personal application operated by Marcus Fruttiger for his own use, and this public information website.</p>
+    <aside class="notice"><strong>Setup status:</strong> checks so far have used mailbox-account metadata, not message content. No ongoing Gmail reader, mirror import or automatic cleanup is active. The read-only feature described below will run only after authorisation and local setup are complete.</aside>
+    <section>
+      <h2>Data access and purpose</h2>
+      <p>The application requests Gmail read-only access (<code>gmail.readonly</code>) to verify the authorised account and support personal email task management. This permission can technically read messages and attachments throughout the authorised mailbox; labels are not an access boundary.</p>
+      <p>When enabled, the reader is intended to process selected message headers, sender and recipient information, dates, subjects, bodies, labels and message identifiers to identify actions, deadlines, waiting items and follow-ups. Attachment downloading and analysis are not enabled. Only the owner's dedicated, explicitly authorised mailbox is in scope.</p>
+      <p>The reader does not send email, alter messages or delete them. Future mirror import and cleanup features require separately approved permissions and an updated description before activation.</p>
+    </section>
+    <section>
+      <h2>Storage and protection</h2>
+      <p>Gmail messages remain hosted by Google. The planned reader processes selected data on the owner's computer. Useful task records, summaries, source references and processing metadata may be retained in the local PA; this website and its public repository do not receive any of that data.</p>
+      <p>Durable authorisation is designed to keep refresh tokens encrypted in owner-restricted local storage, with the encryption key held separately in macOS Keychain. Access tokens are kept in memory. No Gmail access or refresh tokens have been saved during setup. The application's client configuration is kept in a private, owner-restricted local file. Secrets are not put in public source code or ordinary diagnostic logs. Protection of the owner's computer and account remains essential.</p>
+    </section>
+    <section>
+      <h2>Use, sharing and AI processing</h2>
+      <p>Google user data and derived records are used only for the owner's email productivity features. They are not sold, used for advertising, provided to data brokers, used for credit decisions, or used to train general-purpose AI models.</p>
+      <p>No external AI processor has been selected or enabled for this Gmail integration. Before any selected email content is sent to an external processor, the recipient, purpose and data involved must be disclosed and explicitly approved, with this policy updated as needed.</p>
+      <p>Other people are not given access to message content unless the owner expressly agrees to the specific access, or access is necessary for security or compliance with law. Any permitted transfer must remain within Google's applicable Limited Use requirements.</p>
+      <p>Marcus PA Mail Mirror's use and transfer of information received from Google APIs will comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>No Gmail message content has been retained by this integration during setup. The proposed mirror cleanup is not active. Its intended 90-day window is an eligibility rule for moving processed mirror copies to Trash, not a guarantee of permanent deletion on day 90. New imports, unfinished processing and recovery holds would postpone cleanup; Gmail's own Trash retention also applies. Original source mail must not be deleted by mirror cleanup.</p>
+      <p>Local task records and source references have a separate purpose and are not automatically deleted when a mirror copy expires. The owner controls their review and deletion. Before collection is enabled, retention and recovery procedures for local data, logs and backups must be established; no automatic deletion interval is currently promised for them.</p>
+    </section>
+    <section>
+      <h2>Withdrawing access</h2>
+      <p>The owner can stop the local application and remove its connection in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access prevents further authorised API access but does not automatically erase existing Gmail messages or previously retained local records. Those must be reviewed and deleted separately, including applicable backups.</p>
+    </section>
+    <section>
+      <h2>This information website</h2>
+      <p>This site has no sign-in, forms, analytics scripts, advertising or mailbox connection. It sets no application cookies or browser-storage entries. GitHub Pages hosts the site and may retain visitor IP addresses and request information for security and operation under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Following an external link is subject to that service's own privacy practices.</p>
+    </section>
+    <section>
+      <h2>Contact and changes</h2>
+      <p>Questions about the application or this policy can be raised with its operator through the <a href="https://github.com/Fruttiger/marcus-pa-info/issues">public information repository</a>. Do not post email content, passwords, tokens or personal details there; request a suitable private contact route instead.</p>
+      <p>This page will be updated before material changes to data access, use or sharing. Newly requested permissions or uses require the owner's informed approval; publishing a policy update alone does not grant access.</p>
+    </section>
+  </main>
+  <footer><a href="./">Marcus PA Mail Mirror</a><span>Privacy policy · 7 September 2026</span></footer>
+</body>
+</html>
